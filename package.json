@@ -1,0 +1,52 @@
+{
+  "name": "@uni-helper/open",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.33.1",
+  "description": "自动打开小程序开发者工具",
+  "author": "FlippedRound <flippedround@qq.com>",
+  "license": "MIT",
+  "funding": "https://afdian.com/a/flippedround",
+  "homepage": "https://uni-helper.cn/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uni-helper/open.git"
+  },
+  "bugs": "https://github.com/uni-helper/open/issues",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint": "eslint",
+    "prepublishOnly": "nr build",
+    "release": "bumpp",
+    "start": "tsx src/index.ts",
+    "test": "pnpm run build && vitest",
+    "typecheck": "tsc",
+    "prepare": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^8.2.0",
+    "@antfu/ni": "^30.1.0",
+    "@antfu/utils": "^9.3.0",
+    "@types/node": "^25.6.0",
+    "bumpp": "^11.0.1",
+    "eslint": "^10.2.1",
+    "lint-staged": "^16.4.0",
+    "publint": "^0.3.18",
+    "simple-git-hooks": "^2.13.1",
+    "tsdown": "^0.21.10",
+    "tsdown-stale-guard": "^0.1.1",
+    "tsnapi": "^0.3.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9",
+    "vitest": "^4.1.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run build && npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
