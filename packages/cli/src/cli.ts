@@ -12,7 +12,7 @@ const { version } = createRequire(import.meta.url)('../package.json') as { versi
  * CLI 入口，解析命令行参数并执行对应命令
  */
 export async function runCLI(argv: string[] = process.argv): Promise<void> {
-  const cli = cac('uni-open')
+  const cli = cac('unhopen')
 
   cli
     .command('[projectPath]', '打开小程序开发者工具')

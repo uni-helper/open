@@ -13,7 +13,7 @@
 | --- | --- |
 | `@uni-helper/open` | SDK，供其他项目集成调用 |
 | `@uni-helper/open/vite` | Vite 插件，构建完成后自动打开 |
-| `@uni-helper/open/cli` | CLI（命令行使用安装后执行 `uni-open`，也可程序化调用） |
+| `@uni-helper/open/cli` | CLI（命令行使用安装后执行 `unhopen`，也可程序化调用） |
 
 ## CLI
 

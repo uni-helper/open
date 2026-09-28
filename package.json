@@ -2,12 +2,16 @@
   "name": "@uni-helper/open",
   "type": "module",
   "version": "0.0.1",
+  "private": false,
   "packageManager": "pnpm@10.33.1",
   "description": "自动打开小程序开发者工具",
   "author": "FlippedRound <flippedround@qq.com>",
   "license": "MIT",
   "funding": "https://afdian.com/a/flippedround",
   "homepage": "https://uni-helper.cn/",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uni-helper/open.git"
@@ -32,7 +36,7 @@
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
   "bin": {
-    "uni-open": "./dist/bin.mjs"
+    "unhopen": "./dist/bin.mjs"
   },
   "files": [
     "dist"

@@ -8,7 +8,7 @@ import { decodeGbk } from '../src/utils/gbk'
 
 describe('ensureJsonSync', () => {
   it('creates missing json file with default content', () => {
-    const dir = mkdtempSync(join(tmpdir(), 'uni-open-'))
+    const dir = mkdtempSync(join(tmpdir(), 'unhopen-'))
     const filePath = join(dir, 'nested', 'project.config.json')
 
     ensureJsonSync(filePath, { appid: 'touristappid' })
@@ -18,7 +18,7 @@ describe('ensureJsonSync', () => {
   })
 
   it('does not overwrite existing file', () => {
-    const dir = mkdtempSync(join(tmpdir(), 'uni-open-'))
+    const dir = mkdtempSync(join(tmpdir(), 'unhopen-'))
     const filePath = join(dir, 'project.config.json')
     writeFileSync(filePath, '{"appid":"my-appid"}')
 

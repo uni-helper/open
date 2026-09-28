@@ -5,7 +5,7 @@ import { StaleGuardRecorder } from 'tsdown-stale-guard'
 // - index: SDK（packages/open 门面，聚合 core + handlers）
 // - vite:  Vite 插件（packages/vite-plugin）
 // - cli:   CLI 程序化调用（packages/cli）
-// - bin:   uni-open 命令入口（packages/cli）
+// - bin:   unhopen 命令入口（packages/cli）
 export default defineConfig({
   entry: {
     index: 'packages/open/src/index.ts',
