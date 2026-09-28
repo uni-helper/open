@@ -15,6 +15,18 @@
 | `@uni-helper/open/vite` | Vite 插件，构建完成后自动打开 |
 | `@uni-helper/open/cli` | CLI（命令行使用安装后执行 `unhopen`，也可程序化调用） |
 
+## Skill
+
+本仓库的 npm 包内置了面向 AI 编程助手的技能包（[skills/unh-open](./skills/unh-open/SKILL.md)），与包版本一起更新，并将 [skills-npm](https://github.com/antfu/skills-npm) 声明为 peer dependency（npm 7+ 与 pnpm 安装本包时会自动带上）。安装本包后，运行一次即可让 AI 编程助手（ZCode、Claude Code、Cursor 等）使用：
+
+```bash
+npx skills-npm
+```
+
+它会扫描依赖中内置的技能并链接给对应的助手，配合 `npx skills-npm setup` 可在项目里持久化（写入 `prepare` 脚本，安装依赖后自动同步）。
+
+也可以不依赖 npm，直接从 GitHub 安装：`npx skills add uni-helper/open --skill unh-open`。
+
 ## CLI
 
 ```bash

@@ -39,12 +39,14 @@
     "unhopen": "./dist/bin.mjs"
   },
   "files": [
-    "dist"
+    "dist",
+    "skills"
   ],
   "scripts": {
     "build": "tsdown",
     "dev": "tsdown --watch",
     "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prepublishOnly": "nr build",
     "release": "bumpp",
     "test": "pnpm -r run test",
@@ -52,6 +54,7 @@
     "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
+    "skills-npm": "^4.0.0",
     "vite": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
   },
   "peerDependenciesMeta": {
