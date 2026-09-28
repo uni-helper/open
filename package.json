@@ -1,7 +1,7 @@
 {
   "name": "@uni-helper/open",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "packageManager": "pnpm@10.33.1",
   "description": "自动打开小程序开发者工具",
