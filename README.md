@@ -1,5 +1,3 @@
-# [WIP] Open
-
 <a href="https://uni-helper.cn/open"><img src="./banner.svg" alt="banner" width="100%"/></a>
 
 <a href="https://github.com/uni-helper/open/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/open?colorA=005947&colorB=eee&style=for-the-badge" alt="GitHub Stars"></a>
@@ -108,3 +106,11 @@ export default defineConfig({
 ## License
 
 [MIT](./LICENSE)
+
+## 🙇🏻‍♂️[赞助](https://afdian.com/a/flippedround)
+
+<p align="center">
+  <a href="https://afdian.com/a/flippedround">
+    <img alt="sponsors" src="https://cdn.jsdelivr.net/gh/FliPPeDround/sponsors/sponsorkit/sponsors.svg"/>
+  </a>
+</p>
