@@ -1,0 +1,15 @@
+{
+  "name": "open-sdk",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "自动打开小程序开发者工具（SDK 门面，聚合 core 与 handlers，源码由根包打包发布）",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}

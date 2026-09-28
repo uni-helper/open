@@ -1,0 +1,20 @@
+{
+  "name": "open-vite-plugin",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "自动打开小程序开发者工具（Vite 插件，源码由根包打包发布）",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "pathe": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9",
+    "vitest": "^4.1.5"
+  }
+}

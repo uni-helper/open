@@ -1,0 +1,19 @@
+{
+  "name": "open-cli",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "自动打开小程序开发者工具（CLI，源码由根包打包发布）",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "cac": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}

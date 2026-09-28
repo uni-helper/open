@@ -1,0 +1,24 @@
+{
+  "name": "open-core",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "自动打开小程序开发者工具（SDK 核心，源码由根包打包发布）",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "consola": "^3.4.2",
+    "cross-spawn": "^7.0.6",
+    "kolorist": "^1.8.0",
+    "pathe": "^2.0.3",
+    "std-env": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5"
+  }
+}
